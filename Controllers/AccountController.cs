@@ -19,7 +19,7 @@ namespace TaskManagementAPI.Controllers
                 {
                     var usermanger = new UserManager();
                     usermanger.CreateUser(user);
-                    return Ok();
+                    return Ok(user);
                 }
                 catch
                 {
